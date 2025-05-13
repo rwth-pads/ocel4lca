@@ -1,0 +1,28 @@
+﻿name,type,impact,instance,instance type,type type
+,material,24,f1,Frame,object
+,material,15.4,f2,Frame,object
+,material,23,w1,Wheels,object
+,material,27,w1,Wheels,object
+,material,18,g1,Gears,object
+,material,15,g2,Gears,object
+paint,material,1.256,ev4,Paint,event
+paint,material,0.5221,ev7,Paint,event
+pc,energy,0.000738064,ev1,Register,event
+pc,energy,0.000725024,ev5,Register,event
+pc,energy,0.7824,ev14,Book Pay,event
+pc,energy,1.0432,ev15,Book Pay,event
+installation,energy,0.000727632,ev8,Assemble,event
+installation,energy,0.000727632,ev11,Assemble,event
+,energy,0.27384,pk1,Packer,object
+,energy,88.45466667,sm1,Spray. Inst.,object
+,energy,83.67333333,sm2,Spray. Inst.,object
+,energy,78.24,dc1,Dry. Cabine,object
+,energy,48.9,dc1,Dry. Cabine,object
+,pollution,2.46401196,bk1,Bike,object
+,pollution,4.23637144,bk2,Bike,object
+spraying installation,energy,88.45466667,ev4,Paint,event
+spraying installation,energy,83.67333333,ev7,Paint,event
+drying cabine,energy,78.24,ev4,Paint,event
+drying cabine,energy,48.9,ev7,Paint,event
+truck,pollution,2.46401196,ev 13,Deliver,event
+truck,pollution,4.23637144,ev 13,Deliver,event
