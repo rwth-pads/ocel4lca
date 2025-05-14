@@ -1,0 +1,641 @@
+{
+  "objectTypes": [
+    {
+      "name": "Bike",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Dryer",
+      "attributes": [
+        {
+          "name": "energy cons.  [kWh/h]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Frame",
+      "attributes": [
+        {
+          "name": "AlMg1SiCu [g]",
+          "type": "float"
+        },
+        {
+          "name": "recycled",
+          "type": "string"
+        },
+        {
+          "name": "Alu. Imp. Factor [kgco2e/kg]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Gears",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "attributes": []
+    },
+    {
+      "name": "Packer",
+      "attributes": [
+        {
+          "name": "energy cons. [kwh]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Spray. Inst.",
+      "attributes": [
+        {
+          "name": "energy cons.  [kWh/h]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Truck",
+      "attributes": []
+    },
+    {
+      "name": "Wheels",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "type": "float"
+        }
+      ]
+    }
+  ],
+  "eventTypes": [
+    {
+      "name": "Assemble Bike",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Configure",
+      "attributes": []
+    },
+    {
+      "name": "Outgoing Delivery",
+      "attributes": [
+        {
+          "name": "distance",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Pack Bike",
+      "attributes": []
+    },
+    {
+      "name": "Paint Frame",
+      "attributes": [
+        {
+          "name": "spray duration [min]",
+          "type": "float"
+        },
+        {
+          "name": "dry duration [h]",
+          "type": "float"
+        },
+        {
+          "name": "paint name",
+          "type": "string"
+        },
+        {
+          "name": "used paint [l]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Pick Items",
+      "attributes": []
+    },
+    {
+      "name": "Receive Payment",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "Register Order",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "type": "float"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "o1",
+      "type": "Order"
+    },
+    {
+      "id": "f1",
+      "type": "Frame",
+      "attributes": [
+        {
+          "name": "AlMg1SiCu [g]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 1500.0
+        },
+        {
+          "name": "recycled",
+          "time": "1970-01-01T00:00:00Z",
+          "value": "no"
+        },
+        {
+          "name": "Alu. Imp. Factor [kgco2e/kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 16.0
+        }
+      ]
+    },
+    {
+      "id": "w1",
+      "type": "Wheels",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 23.0
+        }
+      ]
+    },
+    {
+      "id": "g1",
+      "type": "Gears",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 18.0
+        }
+      ]
+    },
+    {
+      "id": "o2",
+      "type": "Order"
+    },
+    {
+      "id": "f2",
+      "type": "Frame",
+      "attributes": [
+        {
+          "name": "AlMg1SiCu [g]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 2200.0
+        },
+        {
+          "name": "recycled",
+          "time": "1970-01-01T00:00:00Z",
+          "value": "yes"
+        },
+        {
+          "name": "Alu. Imp. Factor [kgco2e/kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 7.0
+        }
+      ]
+    },
+    {
+      "id": "w2",
+      "type": "Wheels",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 27.0
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "type": "Gears",
+      "attributes": [
+        {
+          "name": "co2e [kg]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "id": "bk1",
+      "type": "Bike",
+      "attributes": [
+        {
+          "name": "type",
+          "time": "1970-01-01T00:00:00Z",
+          "value": "Race"
+        }
+      ]
+    },
+    {
+      "id": "bk2",
+      "type": "Bike",
+      "attributes": [
+        {
+          "name": "type",
+          "time": "1970-01-01T00:00:00Z",
+          "value": "Gravel"
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "type": "Truck"
+    },
+    {
+      "id": "sm1",
+      "type": "Spray. Inst.",
+      "attributes": [
+        {
+          "name": "energy cons.  [kWh/h]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 55.0
+        }
+      ]
+    },
+    {
+      "id": "sm2",
+      "type": "Spray. Inst.",
+      "attributes": [
+        {
+          "name": "energy cons.  [kWh/h]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 70.0
+        }
+      ]
+    },
+    {
+      "id": "dc1",
+      "type": "Dryer",
+      "attributes": [
+        {
+          "name": "energy cons.  [kWh/h]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "id": "pk1",
+      "type": "Packer",
+      "attributes": [
+        {
+          "name": "energy cons. [kwh]",
+          "time": "1970-01-01T00:00:00Z",
+          "value": 0.21
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ev1",
+      "type": "Register Order",
+      "time": "2019-10-12T12:21:00Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.000566
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "o1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev2",
+      "type": "Pick Items",
+      "time": "2019-10-12T14:38:42Z",
+      "relationships": [
+        {
+          "objectId": "o1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "f1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "w1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "g1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev3",
+      "type": "Configure",
+      "time": "2019-10-12T15:46:53Z",
+      "relationships": [
+        {
+          "objectId": "g1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev4",
+      "type": "Paint Frame",
+      "time": "2019-10-12T16:06:04Z",
+      "attributes": [
+        {
+          "name": "spray duration [min]",
+          "value": 74.0
+        },
+        {
+          "name": "dry duration [h]",
+          "value": 12.0
+        },
+        {
+          "name": "paint name",
+          "value": "Dupli-Color"
+        },
+        {
+          "name": "used paint [l]",
+          "value": 0.4
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "f1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "sm1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "dc1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev5",
+      "type": "Register Order",
+      "time": "2019-10-15T10:15:44Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.000556
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "o2",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev6",
+      "type": "Pick Items",
+      "time": "2019-10-15T13:42:12Z",
+      "relationships": [
+        {
+          "objectId": "o2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "f2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "w2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "g2",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev7",
+      "type": "Paint Frame",
+      "time": "2019-10-15T15:51:42Z",
+      "attributes": [
+        {
+          "name": "spray duration [min]",
+          "value": 55.0
+        },
+        {
+          "name": "dry duration [h]",
+          "value": 7.5
+        },
+        {
+          "name": "paint name",
+          "value": "Dupli-Color"
+        },
+        {
+          "name": "used paint [l]",
+          "value": 0.23
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "f2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "sm2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "dc1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev8",
+      "type": "Assemble Bike",
+      "time": "2019-10-16T15:30:59Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.7
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "f1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "w1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "g1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "bk1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev9",
+      "type": "Configure",
+      "time": "2019-10-17T12:32:16Z",
+      "relationships": [
+        {
+          "objectId": "g2",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev10",
+      "type": "Pack Bike",
+      "time": "2019-10-17T15:28:37Z",
+      "relationships": [
+        {
+          "objectId": "bk1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "pk1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev11",
+      "type": "Assemble Bike",
+      "time": "2019-10-18T09:46:21Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.7
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "f2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "g2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "bk2",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev12",
+      "type": "Pack Bike",
+      "time": "2019-10-18T16:14:23Z",
+      "relationships": [
+        {
+          "objectId": "bk2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "pk1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev13",
+      "type": "Outgoing Delivery",
+      "time": "2019-10-19T10:42:21Z",
+      "attributes": [
+        {
+          "name": "distance",
+          "value": 156.7
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "bk1",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "bk2",
+          "qualifier": NaN
+        },
+        {
+          "objectId": "t1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev14",
+      "type": "Receive Payment",
+      "time": "2019-10-21T12:05:12Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.000558
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "o1",
+          "qualifier": NaN
+        }
+      ]
+    },
+    {
+      "id": "ev15",
+      "type": "Receive Payment",
+      "time": "2019-10-24T17:04:48Z",
+      "attributes": [
+        {
+          "name": "energy [kWh]",
+          "value": 0.000558
+        }
+      ],
+      "relationships": [
+        {
+          "objectId": "o2",
+          "qualifier": NaN
+        }
+      ]
+    }
+  ]
+}

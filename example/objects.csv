@@ -1,0 +1,16 @@
+﻿ocel:oid,ocel:type,type,weight,AlMg1SiCu [g],recycled,Alu. Imp. Factor [kgco2e/kg],co2e [kg],energy cons.  [kWh/h],energy cons. [kwh]
+o1,Order,,,,,,,,
+f1,Frame,,,1500,no,16,,,
+w1,Wheels,,,,,,23,,
+g1,Gears,,,,,,18,,
+o2,Order,,,,,,,,
+f2,Frame,,,2200,yes,7,,,
+w2,Wheels,,,,,,27,,
+g2,Gears,,,,,,15,,
+bk1,Bike,Race,11.4,,,,,,
+bk2,Bike,Gravel,19.6,,,,,,
+t1,Truck,,,,,,,,
+sm1,Spray. Inst.,,,,,,,55,
+sm2,Spray. Inst.,,,,,,,70,
+dc1,Dryer,,,,,,,5,
+pk1,Packer,,,,,,,,0.21

@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <object-types>
+    <object-type name="Bike">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="weight" type="float"/>
+        <attribute name="recycled" type="string"/>
+      </attributes>
+    </object-type>
+    <object-type name="Dryer">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="energy cons.  [kWh/h]" type="float"/>
+      </attributes>
+    </object-type>
+    <object-type name="Frame">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="AlMg1SiCu [g]" type="float"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="Alu. Imp. Factor [kgco2e/kg]" type="float"/>
+      </attributes>
+    </object-type>
+    <object-type name="Gears">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="co2e [kg]" type="float"/>
+      </attributes>
+    </object-type>
+    <object-type name="Order">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+      </attributes>
+    </object-type>
+    <object-type name="Packer">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="energy cons. [kwh]" type="float"/>
+      </attributes>
+    </object-type>
+    <object-type name="Spray. Inst.">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="energy cons.  [kWh/h]" type="float"/>
+      </attributes>
+    </object-type>
+    <object-type name="Truck">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+      </attributes>
+    </object-type>
+    <object-type name="Wheels">
+      <attributes>
+        <attribute name="type" type="string"/>
+        <attribute name="recycled" type="string"/>
+        <attribute name="co2e [kg]" type="float"/>
+      </attributes>
+    </object-type>
+  </object-types>
+  <event-types>
+    <event-type name="Assemble Bike">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+        <attribute name="energy [kWh]" type="float"/>
+      </attributes>
+    </event-type>
+    <event-type name="Configure">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+      </attributes>
+    </event-type>
+    <event-type name="Outgoing Delivery">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+        <attribute name="distance" type="float"/>
+      </attributes>
+    </event-type>
+    <event-type name="Pack Bike">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+      </attributes>
+    </event-type>
+    <event-type name="Paint Frame">
+      <attributes>
+        <attribute name="spray duration [min]" type="float"/>
+        <attribute name="dry duration [h]" type="float"/>
+        <attribute name="paint name" type="string"/>
+        <attribute name="used paint [l]" type="float"/>
+      </attributes>
+    </event-type>
+    <event-type name="Pick Items">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+      </attributes>
+    </event-type>
+    <event-type name="Receive Payment">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+        <attribute name="energy [kWh]" type="float"/>
+      </attributes>
+    </event-type>
+    <event-type name="Register Order">
+      <attributes>
+        <attribute name="paint name" type="string"/>
+        <attribute name="energy [kWh]" type="float"/>
+      </attributes>
+    </event-type>
+  </event-types>
+  <objects>
+    <object id="o1" type="Order">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+      </attributes>
+    </object>
+    <object id="f1" type="Frame">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="AlMg1SiCu [g]" time="1970-01-01T00:00:00Z">1500.0</attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z">no</attribute>
+        <attribute name="Alu. Imp. Factor [kgco2e/kg]" time="1970-01-01T00:00:00Z">16.0</attribute>
+      </attributes>
+    </object>
+    <object id="w1" type="Wheels">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="co2e [kg]" time="1970-01-01T00:00:00Z">23.0</attribute>
+      </attributes>
+    </object>
+    <object id="g1" type="Gears">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="co2e [kg]" time="1970-01-01T00:00:00Z">18.0</attribute>
+      </attributes>
+    </object>
+    <object id="o2" type="Order">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+      </attributes>
+    </object>
+    <object id="f2" type="Frame">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="AlMg1SiCu [g]" time="1970-01-01T00:00:00Z">2200.0</attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z">yes</attribute>
+        <attribute name="Alu. Imp. Factor [kgco2e/kg]" time="1970-01-01T00:00:00Z">7.0</attribute>
+      </attributes>
+    </object>
+    <object id="w2" type="Wheels">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="co2e [kg]" time="1970-01-01T00:00:00Z">27.0</attribute>
+      </attributes>
+    </object>
+    <object id="g2" type="Gears">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="co2e [kg]" time="1970-01-01T00:00:00Z">15.0</attribute>
+      </attributes>
+    </object>
+    <object id="bk1" type="Bike">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z">Race</attribute>
+        <attribute name="weight" time="1970-01-01T00:00:00Z">11.4</attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+      </attributes>
+    </object>
+    <object id="bk2" type="Bike">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z">Gravel</attribute>
+        <attribute name="weight" time="1970-01-01T00:00:00Z">19.6</attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+      </attributes>
+    </object>
+    <object id="t1" type="Truck">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+      </attributes>
+    </object>
+    <object id="sm1" type="Spray. Inst.">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="energy cons.  [kWh/h]" time="1970-01-01T00:00:00Z">55.0</attribute>
+      </attributes>
+    </object>
+    <object id="sm2" type="Spray. Inst.">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="energy cons.  [kWh/h]" time="1970-01-01T00:00:00Z">70.0</attribute>
+      </attributes>
+    </object>
+    <object id="dc1" type="Dryer">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="energy cons.  [kWh/h]" time="1970-01-01T00:00:00Z">5.0</attribute>
+      </attributes>
+    </object>
+    <object id="pk1" type="Packer">
+      <attributes>
+        <attribute name="type" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="recycled" time="1970-01-01T00:00:00Z"></attribute>
+        <attribute name="energy cons. [kwh]" time="1970-01-01T00:00:00Z">0.21</attribute>
+      </attributes>
+    </object>
+  </objects>
+  <events>
+    <event id="ev1" type="Register Order" time="2019-10-12T12:21:00">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.000566</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev2" type="Pick Items" time="2019-10-12T14:38:42">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o1" qualifier=""/>
+        <relationship object-id="f1" qualifier=""/>
+        <relationship object-id="w1" qualifier=""/>
+        <relationship object-id="g1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev3" type="Configure" time="2019-10-12T15:46:53">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="g1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev4" type="Paint Frame" time="2019-10-12T16:06:04">
+      <attributes>
+        <attribute name="spray duration [min]">74.0</attribute>
+        <attribute name="dry duration [h]">12.0</attribute>
+        <attribute name="paint name">Dupli-Color</attribute>
+        <attribute name="used paint [l]">0.4</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="f1" qualifier=""/>
+        <relationship object-id="sm1" qualifier=""/>
+        <relationship object-id="dc1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev5" type="Register Order" time="2019-10-15T10:15:44">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.000556</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o2" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev6" type="Pick Items" time="2019-10-15T13:42:12">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o2" qualifier=""/>
+        <relationship object-id="f2" qualifier=""/>
+        <relationship object-id="w2" qualifier=""/>
+        <relationship object-id="g2" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev7" type="Paint Frame" time="2019-10-15T15:51:42">
+      <attributes>
+        <attribute name="spray duration [min]">55.0</attribute>
+        <attribute name="dry duration [h]">7.5</attribute>
+        <attribute name="paint name">Krylon</attribute>
+        <attribute name="used paint [l]">0.23</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="f2" qualifier=""/>
+        <relationship object-id="sm2" qualifier=""/>
+        <relationship object-id="dc1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev8" type="Assemble Bike" time="2019-10-16T15:30:59">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.7</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="f1" qualifier=""/>
+        <relationship object-id="w1" qualifier=""/>
+        <relationship object-id="g1" qualifier=""/>
+        <relationship object-id="bk1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev9" type="Configure" time="2019-10-17T12:32:16">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="g2" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev10" type="Pack Bike" time="2019-10-17T15:28:37">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="bk1" qualifier=""/>
+        <relationship object-id="pk1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev11" type="Assemble Bike" time="2019-10-18T09:46:21">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.7</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="f2" qualifier=""/>
+        <relationship object-id="g2" qualifier=""/>
+        <relationship object-id="bk2" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev12" type="Pack Bike" time="2019-10-18T16:14:23">
+      <attributes>
+        <attribute name="paint name"></attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="bk2" qualifier=""/>
+        <relationship object-id="pk1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev13" type="Outgoing Delivery" time="2019-10-19T10:42:21">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="distance">256.7</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="bk1" qualifier=""/>
+        <relationship object-id="bk2" qualifier=""/>
+        <relationship object-id="t1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev14" type="Receive Payment" time="2019-10-21T12:05:12">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.000558</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o1" qualifier=""/>
+      </objects>
+    </event>
+    <event id="ev15" type="Receive Payment" time="2019-10-24T17:04:48">
+      <attributes>
+        <attribute name="paint name"></attribute>
+        <attribute name="energy [kWh]">0.000558</attribute>
+      </attributes>
+      <objects>
+        <relationship object-id="o2" qualifier=""/>
+      </objects>
+    </event>
+  </events>
+</log>

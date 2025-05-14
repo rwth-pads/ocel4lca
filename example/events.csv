@@ -1,0 +1,16 @@
+﻿ocel:eid,ocel:activity,ocel:timestamp,spray duration [min],dry duration [h],paint name,used paint [l],distance,energy [kWh]
+ev1,Register Order,12.10.2019 12:21:00,,,,,,0.000566
+ev2,Pick Items,12.10.2019 14:38:42,,,,,,
+ev3,Configure,12.10.2019 15:46:53,,,,,,
+ev4,Paint Frame,12.10.2019 16:06:04,74,12,Dupli-Color,0.4,,
+ev5,Register Order,15.10.2019 10:15:44,,,,,,0.000556
+ev6,Pick Items,15.10.2019 13:42:12,,,,,,
+ev7,Paint Frame,15.10.2019 15:51:42,55,7.5,Krylon,0.23,,
+ev8,Assemble Bike,16.10.2019 15:30:59,,,,,,0.7
+ev9,Configure,17.10.2019 12:32:16,,,,,,
+ev10,Pack Bike,17.10.2019 15:28:37,,,,,,
+ev11,Assemble Bike,18.10.2019 09:46:21,,,,,,0.7
+ev12,Pack Bike,18.10.2019 16:14:23,,,,,,
+ev13,Outgoing Delivery,19.10.2019 10:42:21,,,,,256.7,
+ev14,Receive Payment,21.10.2019 12:05:12,,,,,,0.000558
+ev15,Receive Payment,24.10.2019 17:04:48,,,,,,0.000558
