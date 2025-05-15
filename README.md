@@ -45,7 +45,8 @@ This READ.me is heavily based on that from the OCEAn web application.
 In the above demo video, the [Order Management OCEL](https://zenodo.org/records/8337464), enriched with transport distances, is imported and its transport emissions analyzed.
 
 ### Description
-Welcome to **OCEAn** *(**O**bject-**c**entric **E**nvironmental **An**alysis)*, a web app for carbon emission analysis of [object-centric event logs \(OCELs\)](https://ocel-standard.org/). OCEAn's main features are
+Welcome to **OCEAn** *(**O**bject-**c**entric **E**nvironmental
+**An**alysis)*, a web app for carbon emission analysis of [object-centric event logs \(OCELs\)](https://ocel-standard.org/). OCEAn's main features are
 - Importing OCELs (OCEL 2.0 `sqlite` format) and enriching them by event-level emission data based on user-defined rules
 - Allocating emissions from events to objects
 - Visualizing and exporting the emission data
