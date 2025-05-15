@@ -15,7 +15,7 @@
 This repository is a combination of two separate projects: 
 1. the creation of the illustrative example for the paper "Object-Centric Process Mining for Semi-Automated
 and Multi-Perspective Sustainability Analyses"
-2. The OCEAn web application (derive from https://github.com/rwth-pads/ocean) which is a web-based tool for object-centric process mining and sustainability assessment.
+2. The OCEAn web application (derived from https://github.com/rwth-pads/ocean) which is a web-based tool for object-centric process mining and sustainability assessment.
 
 - `example`: Environment, figures, and example OCELs used in the paper
 - `ocean`: The OCEAn web application
